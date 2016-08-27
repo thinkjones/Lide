@@ -1,5 +1,14 @@
 /* app css stylesheet */
 
+html {
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+  color: lightblue;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

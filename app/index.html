@@ -8,18 +8,39 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/golden-layout/dist/goldenlayout.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="bower_components/golden-layout/src/css/goldenlayout-base.css" />
+  <link type="text/css" rel="stylesheet" href="bower_components/golden-layout/src/css/goldenlayout-dark-theme.css" />
+
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/lodash/dist/lodash.min.js"></script>
   <script src="app.js"></script>
-  <script src="window-manager-controller.js"></script>
+
+  <template type="text/html" id="widget1Template">
+    <div ng-controller="w1ContainerController" class="section">
+      <h1>Widget Type 1</h1>
+      <strong>Username</strong> {{name}}
+    </div>
+  </template>
+
+  <template type="text/html" id="widget2Template">
+    <div ng-controller="w2ContainerController" class="section">
+      <h1>Widget Type 2</h1>
+      <strong>Age</strong> {{age}}
+    </div>
+  </template>
+
+  <template type="text/html" id="widget3Template">
+    <div ng-controller="w3ContainerController" class="section">
+      <h1>Widget Type 3</h1>
+      <strong>City</strong> {{city}}
+    </div>
+  </template>
+
 </head>
 <body>
-
-  <div ng-app="lideApp">
-    <div ng-controller="WindowManagerController as wm">
-      {{wm.greeting}}
-    </div>
-  </div>
 
 </body>
 </html>
